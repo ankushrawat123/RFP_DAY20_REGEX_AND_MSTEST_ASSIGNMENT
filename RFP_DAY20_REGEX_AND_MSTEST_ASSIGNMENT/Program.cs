@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using RFP_DAY20_REGEX_AND_MSTEST_ASSIGNMENT;
 Console.WriteLine("Welcome to REGEX PROGRAM!\n");
-Console.WriteLine("ENTER \n1 FOR VALIDATE FIRSTNAME REGEX PROGRAM \n2 FOR VALIDATE LASTNAME REGEX PROGRAM\n3 FOR VALIDATE EMAIL REGEX PROGRAM\n4 FOR VALIDATE MOBILE REGEX PROGRAM\n");
+Console.WriteLine("ENTER \n1 FOR VALIDATE FIRSTNAME REGEX PROGRAM \n2 FOR VALIDATE LASTNAME REGEX PROGRAM\n3 FOR VALIDATE EMAIL REGEX PROGRAM\n4 FOR VALIDATE MOBILE REGEX PROGRAM \n5 FOR VALIDATE PASSWORD MINIMUM 8 CHARACTERS REGEX PROGRAM\n");
 int num = Convert.ToInt32(Console.ReadLine());
 switch (num)
 {
@@ -44,6 +44,18 @@ switch (num)
     case 4:
         ValidateMobile MobileObj = new ValidateMobile();    
         if(MobileObj.Validate_Mobile("91 8734233456"))
+        {
+            Console.WriteLine("Valid");
+        }
+        else
+        {
+            Console.WriteLine("Invalid");
+        }
+        break;
+
+    case 5:
+        ValidatePassword PasswordObj = new ValidatePassword();
+        if(PasswordObj.Password("%Ankush4u344&"))
         {
             Console.WriteLine("Valid");
         }
