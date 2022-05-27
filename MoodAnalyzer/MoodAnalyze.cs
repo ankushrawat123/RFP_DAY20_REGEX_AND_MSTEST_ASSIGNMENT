@@ -19,10 +19,7 @@ namespace MoodAnalyzer
         }
         public string analyseMood()
         {
-            if(this.Message.ToUpper().Contains("HAPPY"))
-            {
-                return "HAPPY";
-            }
+           
             if (this.Message.ToUpper().Contains("SAD"))
             {
                 return "SAD";
