@@ -22,13 +22,17 @@ namespace MoodAnalyzer
             try
             {
                 if (this.Message.ToUpper().Contains("SAD"))
+                {
                     return "SAD";
+                }
                 else if (this.Message.ToUpper().Equals(string.Empty))
                 {
-                    throw new CustomException(CustomException.ExceptionType.Empty_Message,"Message should not be Empty");
+                    throw new CustomException(CustomException.ExceptionType.Empty_Message, "Message should not be Empty");
                 }
                 else
+                {
                     return "HAPPY";
+                }
             }
             catch(NullReferenceException)
             {

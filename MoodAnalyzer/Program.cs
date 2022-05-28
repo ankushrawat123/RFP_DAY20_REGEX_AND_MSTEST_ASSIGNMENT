@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using MoodAnalyzer;
 Console.WriteLine("WELCOME TO MOOD ANALYZER PROGRAM ");
-Console.WriteLine("Enter \n1 FOR MOODANALYZER SAD,HAPPY & OTHER MOOD PROGRAM \n2 FOR MOODANALYZER INVALID INPUT PROGRAM\n3 FOR CUSTOM EXCEPTION PROGRAM\n ");
+Console.WriteLine("Enter \n1 FOR MOODANALYZER SAD,HAPPY & OTHER MOOD PROGRAM \n2 FOR MOODANALYZER INVALID INPUT PROGRAM\n3 FOR CUSTOM EXCEPTION PROGRAM\n4 FOR MOODANALYZER RETURN OBJECT PROGRAM\n ");
 int num = Convert.ToInt32(Console.ReadLine());
 switch (num)
 {
@@ -21,5 +21,11 @@ switch (num)
         MoodAnalyze3 Moodobj3 = new MoodAnalyze3();
         string result3 = Moodobj3.analyzeMood3();
         Console.WriteLine(result3);
+        break;
+
+    case 4:
+        MoodAnalyze3 Moodobj4 = new MoodAnalyze3();
+        string result4 = Moodobj4.analyzeMood3();
+        Console.WriteLine(result4);
         break;
 }
